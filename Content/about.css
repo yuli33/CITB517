@@ -1,0 +1,160 @@
+﻿#main {
+    overflow: hidden;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.downloadButton {
+    background-color: rgb(233, 50, 80);
+    color: white;
+}
+
+    .downloadButton:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(233, 50, 80);
+    }
+
+#avatar {
+    width: 50%;
+    border-radius: 50%;
+    border: 4px solid rgb(233, 50, 80);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+div.polaroidLeft {
+    margin: 0 10px 25px 0;
+    float: left;
+    width: 30%;
+    min-width: 240px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.containerLeft {
+    text-align: left;
+    padding: 0 20px 10px 50px;
+}
+
+.categoriesLeft {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.checks {
+    padding: 5px 5px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+div.polaroidRightUp {
+    overflow: hidden;
+    width: 66%;
+    min-width: 350px;
+    min-width: 200px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 0 10px 10px;
+}
+
+div.containerRightUp {
+    text-align: left;
+    padding: 10px 20px 10px 50px;
+}
+
+.categoriesRight {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.workPlaces {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dates {
+    margin-bottom: 10px;
+    color: rgb(233, 50, 80);
+    font-weight: 600;
+}
+
+div.polaroidRightDown {
+    overflow: hidden;
+    width: 66%;
+    min-width: 350px;
+    min-width: 200px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 0 25px 10px;
+}
+
+div.containerRightDown {
+    text-align: left;
+    padding: 10px 20px 10px 50px;
+}
+
+.name {
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(233, 50, 80);
+}
+
+hr {
+    margin: 20px 0;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(233, 50, 80);
+}
+
+.lastDiv {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-height: 320px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+@media screen and (max-width: 700px) {
+    .sidenav {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .polaroidLeft, .polaroidRightUp, .polaroidRightDown {
+        width: 100% !important;
+    }
+
+    .polaroidRightUp, .polaroidRightDown {
+        margin: 20px 0 !important;
+    }
+}

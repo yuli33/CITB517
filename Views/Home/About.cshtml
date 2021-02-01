@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    @Styles.Render("~/Content/about.css")
+    @Scripts.Render("~/scripts/index.js")
+}
+
+<div id="main">
+    <div class="polaroidLeft">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img style="padding: 20px 0 0 20px" src="~/Content/Images/navbar1.ico"></span>
+        <img id="avatar" src="~/Content/Images/stonks.jpg" alt="5 Terre">
+        <div class="containerLeft">
+            <p class="name">Dave Watson</p>
+            <div class="checks"><img src="~/Content/Images/profession.ico"> Developer</div>
+            <div class="checks"><img src="~/Content/Images/house.ico"> New York, USA</div>
+            <div class="checks"><img src="~/Content/Images/mail.ico"> dave@mail.com</div>
+            <div class="checks"><img src="~/Content/Images/phone.ico"> +123456789</div>
+
+            <hr>
+            <p class="categoriesLeft"><img src="~/Content/Images/person.ico"> Personality</p>
+            <div class="checks"><img src="~/Content/Images/ch.ico"> Optimistic</div>
+            <div class="checks"><img src="~/Content/Images/ch.ico"> Organized</div>
+            <div class="checks"><img src="~/Content/Images/ch.ico"> Quick learner</div>
+            <div class="checks"><img src="~/Content/Images/ch.ico"> Team worker</div>
+
+            <hr>
+            <p class="categoriesLeft"><img src="~/Content/Images/globe.ico"> Languages</p>
+            <div class="checks">English</div>
+            <div style="margin-bottom:15px; background-color: #e4e4e4; border-radius:16px; font-size:12px">
+                <div style="width:90%; background-color: rgb(236, 75, 102); padding:0.01em 0px; text-align:center; border-radius:16px">
+                    <div style="text-align:center; color:#fff">90%</div>
+                </div>
+            </div>
+            <div class="checks">German</div>
+            <div style="margin-bottom:15px; background-color: #e4e4e4; border-radius:16px; font-size:12px">
+                <div style="width:50%; background-color: rgb(236, 75, 102); padding:0.01em 0px; text-align:center; border-radius:16px">
+                    <div style="text-align:center; color:#fff">50%</div>
+                </div>
+            </div>
+            <div class="checks">Spanish</div>
+            <div style="margin-bottom:15px; background-color: #e4e4e4; border-radius:16px; font-size:12px">
+                <div style="width:25%; background-color: rgb(236, 75, 102); padding:0.01em 0px; text-align:center; border-radius:16px">
+                    <div style="text-align:center; color:#fff">25%</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px">
+                <a href="~/Content/Images/cv.pdf" download="~/Content/Images/cv.pdf"><button class="button downloadButton">Download CV</button></a>
+            </p>
+        </div>
+    </div>
+    <div class="polaroidRightUp">
+        <div class="containerRightUp">
+            <p class="categoriesRight"><img src="~/Content/Images/work.ico"> Work Experience</p>
+            <div class="workPlaces">Web Developer</div>
+            <div class="dates"><img src="~/Content/Images/calendar.ico"> Jun 2018 - Current</div>
+            <div style="font-style:italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada consectetur sapien et laoreet. Proin molestie arcu ac ipsum blandit gravida. Aliquam quis accumsan tellus. Curabitur sem tellus, gravida nec lacinia a, malesuada et ante. Maecenas non quam at sapien lacinia venenatis at ac felis.</div>
+            <hr>
+            <div class="workPlaces">Front End Developer</div>
+            <div class="dates"><img src="~/Content/Images/calendar.ico"> Feb 2018 - Jun 2018</div>
+            <div style="font-style:italic">Donec commodo at nisl id gravida. Morbi rutrum sagittis dui. Sed nec tristique nisl. Morbi quis ante accumsan, scelerisque libero ut, commodo odio. Aenean suscipit orci imperdiet auctor hendrerit. Nam varius justo dolor, id fermentum ex pharetra vel.</div>
+            <hr>
+            <div class="workPlaces">Java Developer</div>
+            <div class="dates"><img src="~/Content/Images/calendar.ico"> Dec 2016 - Jan 2018</div>
+            <div class="lastDiv" style="font-style:italic">Nam dolor orci, hendrerit quis semper in, malesuada non urna. Fusce ultrices luctus vulputate. Praesent eget libero porta, imperdiet neque vitae, efficitur urna. Fusce efficitur congue nulla vitae efficitur. Duis fermentum ipsum quis nunc suscipit, ac lacinia odio maximus.</div>
+        </div>
+    </div>
+    <div class="polaroidRightDown">
+        <div class="containerRightDown">
+            <p class="categoriesRight"><img src="~/Content/Images/education.ico"> Education</p>
+            <div class="workPlaces">Universität Wien</div>
+            <div class="dates"><img src="~/Content/Images/calendar.ico"> Aug 2018 - Jun 2020</div>
+            <hr>
+            <div class="workPlaces">New Bulgarian University</div>
+            <div class="dates"><img src="~/Content/Images/calendar.ico"> Oct 2014 - May 2018</div>
+            <hr>
+            <div class="workPlaces">Foreign Languages High School</div>
+            <div class="dates lastDiv"><img src="~/Content/Images/calendar.ico"> Sep 2009 - May 2014</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿@model Demo.Models.CommentModel
+
+@{
+    ViewBag.Title = "Comments";
+    @Styles.Render("~/Content/Comments.css")
+    @Scripts.Render("~/scripts/comments.js")
+}
+
+<div id="main">
+    <div class="polaroid">
+        <div class="container" id="container1">
+            <div class="comment">
+                <span style="float: left; font-size:30px;cursor:pointer" onclick="openNav()"><img src="~/Content/Images/navbar2.ico"></span>
+                <h2>Comment section</h2>
+            </div>
+            @using (Html.BeginForm("Create", "Home", FormMethod.Post))
+            {
+                <p>
+                    <label class="labels">First Name</label>
+                    @Html.TextBoxFor(m => m.FirstName, new { @id = "firstNameField", @class = "fields" })
+                </p>
+                <p>
+                    <label class="labels">Last Name</label>
+                    @Html.TextBoxFor(m => m.LastName, new { @id = "lastNameField", @class = "fields" })
+                </p>
+                <p>
+                    <label class="labels">Comment</label>
+                    @Html.TextAreaFor(m => m.Comment, new { @class = "fields, commentField" })
+                </p>
+                <p><button class="button submitButton" onclick="">Submit</button></p>
+
+                <p><label class="labels">Comments:</label></p>
+
+                foreach (var comment in ViewBag.Comments)
+                {
+                    string time = @comment.Time.ToString("dd MMMM yyyy", System.Globalization.CultureInfo.InvariantCulture) + " at " + @comment.Time.ToString("HH:mm");
+                    <hr>
+                    <p class="container2">
+                        <label class="names">@comment.FirstName @comment.LastName</label>
+                        <label class="time nowrap">@time</label>
+                        <p class="commentText">@comment.Text</p>
+                    </p>
+                }
+            }
+
+        </div>
+    </div>
+</div>

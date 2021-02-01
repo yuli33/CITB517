@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Gallery";
+    @Styles.Render("~/Content/gallery.css")
+}
+
+<div id="main">
+    <div class="polaroid">
+        <div class="container">
+            <div class="title">
+                <div style="float: left;font-size:30px;cursor:pointer" onclick="openNav()"><img style="padding: 10px;" src="~/Content/Images/navbar2.ico"></div>
+                <h2>Gallery</h2>
+            </div>
+            <div class="pictures">
+                <img class="responsive" id="Img1" src="~/Content/Gallery/img1.jpeg" alt="Cinque Terre, Italy" width="600" height="400" onclick="openImg('Img1')">
+                <img class="responsive" id="Img2" src="~/Content/Gallery/img2.jpeg" alt="Forest" width="600" height="400" onclick="openImg('Img2')">
+                <img class="responsive" id="Img3" src="~/Content/Gallery/img3.jpg" alt="Northern Lights, Norway" width="600" height="400" onclick="openImg('Img3')">
+                <img class="responsive" id="Img4" src="~/Content/Gallery/img4.jpg" alt="Mountains" width="600" height="400" onclick="openImg('Img4')">
+
+                <img class="responsive" id="Img5" src="~/Content/Gallery/img5.jpg" alt="India Gate" width="600" height="400" onclick="openImg('Img5')">
+                <img class="responsive" id="Img6" src="~/Content/Gallery/img6.jpg" alt="Chicago, USA" width="600" height="400" onclick="openImg('Img6')">
+                <img class="responsive" id="Img7" src="~/Content/Gallery/img7.jpg" alt="Paris, France" width="600" height="400" onclick="openImg('Img7')">
+                <img class="responsive" id="Img8" src="~/Content/Gallery/img8.jpg" alt="Istanbul, Turkey" width="600" height="400" onclick="openImg('Img8')">
+
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img">
+                    <div id="caption"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Scripts.Render("~/scripts/gallery.js")
